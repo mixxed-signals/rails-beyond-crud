@@ -1,0 +1,7 @@
+<h1>New review</h1>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit "Submit review", class: "btn btn-primary" %>
+  <%# by default form submit actio routes to /reviews %>
+  <%# to direct to /restaurants/id/reviews -> %>
+<% end %>

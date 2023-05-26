@@ -1,0 +1,10 @@
+<h1>five star restaurants</h1>
+
+<ol>
+<% @restaurants.each do |restaurant| %>
+<li> <%= restaurant.name %> </li>
+<%= link_to "Show this restaurant", restaurant %>
+<% end %>
+
+
+</ol>
